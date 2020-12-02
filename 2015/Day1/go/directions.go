@@ -38,8 +38,10 @@ func main() {
 		}
 	}
 
-	floors := countFloors(value)
-	fmt.Printf("Santa traveled to floor #%v\n", floors)
+	//floors := countFloors(value)
+	//fmt.Printf("Santa traveled to floor #%v\n", floors)
+	floors := findBasement(value)
+	fmt.Printf("Santa entered the basement at position #%v", floors)
 	if test {
 		if floors == expect {
 			fmt.Println("Test passed!")
@@ -64,4 +66,21 @@ func countFloors(value string) int {
 		}
 	}
 	return result
+}
+
+func findBasement(value string) int {
+	var result = 0
+	for i, c := range value {
+		if c == '(' {
+			result++
+		}
+		if c == ')' {
+			result--
+		}
+		if result == -1 {
+			return i + 1
+		}
+	}
+	log.Fatal("Santa never entered the basement!")
+	return 0
 }
