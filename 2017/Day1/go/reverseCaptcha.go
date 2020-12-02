@@ -24,7 +24,7 @@ func main() {
 	var result int
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		result = process(scanner.Text())
+		result = process2(scanner.Text())
 	}
 
 	fmt.Printf("The solution is: %v", result)
@@ -53,6 +53,34 @@ func process(line string) int {
 				log.Fatal(er)
 			}
 		}
+
+		if curr == partner {
+			result += curr
+		}
+	}
+	return result
+}
+
+func process2(line string) int {
+	step := len(line) / 2
+	result := 0
+	for i, c := range line {
+		curr, er := strconv.Atoi(string(c))
+		if er != nil {
+			log.Fatal(er)
+		}
+
+		next := step + i
+		if next > len(line)-1 {
+			next -= len(line)
+		}
+
+		partner, er := strconv.Atoi(string(line[next]))
+		if er != nil {
+			log.Fatal(er)
+		}
+
+		//fmt.Printf("%v: %v is %v steps ahead of %v at position %v", i, partner, step, curr, partner)
 
 		if curr == partner {
 			result += curr
