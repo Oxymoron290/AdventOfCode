@@ -25,7 +25,8 @@ func main() {
 	total := 0
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		total += measure(scanner.Text())
+		//total += measurePaper(getDimensions(scanner.Text()))
+		total += measureRibbon(getDimensions(scanner.Text()))
 	}
 	fmt.Printf("Total square footage: %v sqft", total)
 
@@ -34,7 +35,7 @@ func main() {
 	}
 }
 
-func measure(dimensions string) int {
+func getDimensions(dimensions string) (int, int, int) {
 	side := strings.Split(dimensions, "x")
 	length, err := strconv.Atoi(side[0])
 	if err != nil {
@@ -48,6 +49,11 @@ func measure(dimensions string) int {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	return length, width, height
+}
+
+func measurePaper(length int, width int, height int) int {
 
 	face1 := length * width
 	face2 := width * height
@@ -63,4 +69,21 @@ func measure(dimensions string) int {
 	}
 
 	return ((2 * face1) + (2 * face2) + (2 * face3)) + smallest
+}
+
+func measureRibbon(length int, width int, height int) int {
+	face1 := 2*length + 2*width
+	face2 := 2*width + 2*height
+	face3 := 2*height + 2*length
+
+	smallest := 0
+	if face1 <= face2 && face1 <= face3 {
+		smallest = face1
+	} else if face2 <= face1 && face2 <= face3 {
+		smallest = face2
+	} else {
+		smallest = face3
+	}
+
+	return smallest + (length * width * height)
 }
