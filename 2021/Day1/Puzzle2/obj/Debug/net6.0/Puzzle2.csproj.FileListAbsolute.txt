@@ -1,0 +1,16 @@
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\bin\Debug\net6.0\Puzzle2.exe
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\Puzzle2.csproj.AssemblyReference.cache
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\Puzzle2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\Puzzle2.AssemblyInfoInputs.cache
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\Puzzle2.AssemblyInfo.cs
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\Puzzle2.csproj.CoreCompileInputs.cache
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\Puzzle2.dll
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\ref\Puzzle2.dll
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\Puzzle2.pdb
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\bin\Debug\net6.0\Puzzle2.deps.json
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\bin\Debug\net6.0\Puzzle2.runtimeconfig.json
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\bin\Debug\net6.0\Puzzle2.dll
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\bin\Debug\net6.0\ref\Puzzle2.dll
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\bin\Debug\net6.0\Puzzle2.pdb
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\obj\Debug\net6.0\Puzzle2.genruntimeconfig.cache
+C:\Dev\AdventOfCode\2021\Day1\Puzzle2\bin\Debug\net6.0\input.txt
